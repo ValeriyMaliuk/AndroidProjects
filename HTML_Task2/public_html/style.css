@@ -1,0 +1,86 @@
+#frame
+{
+    height: 390px;
+    width: 930px;
+    margin: 100px 40px 10px 70px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    background: linear-gradient(to top, #ededed, #ffffff);
+}
+#first
+{
+    float:left;
+    height: 345px;
+    width: 430px;
+    padding: 15px 20px 20px 20px;
+}
+#second
+{
+    float:right;
+    height: 350px;
+    width: 415px;
+    padding: 20px;
+}
+div.righttext
+{
+    width: 50%;
+    float: right; 
+    text-align: left;
+    padding-top: 25px;
+}
+span.head
+{
+    font-family:Tahoma, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+}
+span.Slefttext
+{
+    font-family:Tahoma, sans-serif;
+    font-size: 13pt;
+}
+span.Srighttext
+{
+    font-family:Tahoma, sans-serif;
+    font-size: 11pt;
+}
+span.RegRef
+{
+    font-family:Tahoma, sans-serif;
+    font-size: 16pt;
+    white-space: pre;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+a.btn
+{
+    height: 40px;
+    width: 415px;
+    background: green;
+    padding: 20px 20px 20px 100px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    border: 1px solid white;
+    border-radius: 5px;
+    background: linear-gradient(to top, #359A15, #61D73E);
+    text-decoration: none;
+}
+#rectangle 
+{
+    margin-top: 35px;
+    padding: 10px;
+    float: left;
+    width: 375px;
+    height: 40px;
+    background: #adadad;
+}
+#triangle
+{
+    margin-top: 35px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 35px solid #adadad;
+    border-bottom: 30px solid transparent;
+}
