@@ -1,0 +1,164 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="First Name"
+        android:id="@+id/brand"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40px" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Second Name"
+        android:id="@+id/version"
+        android:layout_below="@+id/brand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Date of Birth"
+        android:id="@+id/sdk"
+        android:layout_below="@+id/version"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Age"
+        android:id="@+id/time"
+        android:layout_below="@+id/sdk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/Fname"
+        android:layout_above="@+id/version"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Surname"
+        android:ems="10"
+        android:id="@+id/Lname"
+        android:layout_above="@+id/sdk"
+        android:layout_alignRight="@+id/Fname"
+        android:layout_alignEnd="@+id/Fname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:layout_above="@+id/time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/age"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignLeft="@+id/Fname"
+        android:layout_alignStart="@+id/Fname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW"
+        android:id="@+id/btnshow"
+        android:layout_below="@+id/time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="show"
+        android:layout_marginTop="30px" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnshow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="to DB"
+            android:id="@+id/toDBbtn"
+            android:onClick="savetoDB"
+            android:layout_alignTop="@+id/btnshow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false" />
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="From DB"
+            android:id="@+id/button2"
+            android:onClick="loadfromDB"
+            android:layout_below="@+id/toDBbtn"
+            android:layout_alignLeft="@+id/toDBbtn"
+            android:layout_alignStart="@+id/toDBbtn" />
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="Send to email"
+            android:id="@+id/send"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="img from cam"
+            android:id="@+id/imgcam"
+            android:layout_below="@+id/send"
+            android:layout_alignLeft="@+id/send"
+            android:layout_alignStart="@+id/send"
+            android:onClick="CameraTurnClick" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="img from gallery"
+            android:id="@+id/imggal"
+            android:onClick="ImgFromGal" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/abc_ab_stacked_solid_light_holo" />
+
+</RelativeLayout>

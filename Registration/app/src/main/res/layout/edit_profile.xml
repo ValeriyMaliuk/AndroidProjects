@@ -1,0 +1,130 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="First Name"
+        android:id="@+id/brand"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40px" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Second Name"
+        android:id="@+id/version"
+        android:layout_below="@+id/brand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Nik"
+        android:id="@+id/sdk"
+        android:layout_below="@+id/version"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:text="Email"
+        android:id="@+id/time"
+        android:layout_below="@+id/sdk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Fname"
+        android:layout_above="@+id/version"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Lname"
+        android:layout_above="@+id/sdk"
+        android:layout_alignRight="@+id/Fname"
+        android:layout_alignEnd="@+id/Fname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/login"
+        android:layout_above="@+id/time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignLeft="@+id/Fname"
+        android:layout_alignStart="@+id/Fname"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/time">
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="Send to server"
+            android:id="@+id/send"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/clear"
+            android:layout_alignStart="@+id/clear" />
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:text="img from cam"
+            android:id="@+id/imgcam"
+            android:layout_below="@+id/send"
+            android:layout_alignLeft="@+id/send"
+            android:layout_alignStart="@+id/send"
+            android:onClick="CameraTurnClick" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="img from gallery"
+            android:id="@+id/imggal"
+            android:onClick="ImgFromGal" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/abc_ab_stacked_solid_light_holo" />
+
+</RelativeLayout>
