@@ -44,9 +44,7 @@ public class MyActivity extends ActionBarActivity
     PersonDB db;
     SQLiteDatabase sqdb;
 
-    int LOL;
-    ////////////
-    ///BLA-BLA
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

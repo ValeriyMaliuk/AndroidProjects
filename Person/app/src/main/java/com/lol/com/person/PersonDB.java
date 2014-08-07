@@ -18,7 +18,7 @@ class PersonDB extends SQLiteOpenHelper {
         // создаем таблицу с полями
         db.execSQL("create table PERSON ("
                 + "id integer AUTO_INCREMENT"
-                + "age integer,"
+                + "age text,"
                 + "bday text,"
                 + "fname text,"
                 + "lname text" + ");");
